@@ -2,7 +2,7 @@ package com.codecool.EnergeticDevelopment.model.mines;
 
 import com.codecool.EnergeticDevelopment.model.Produce;
 
-abstract class Mines implements Produce {
+public abstract class Mines implements Produce {
 
     int unitsProducePerDay;
     MineTypes type;

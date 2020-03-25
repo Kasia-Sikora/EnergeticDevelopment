@@ -2,18 +2,21 @@ package com.codecool.EnergeticDevelopment.model.energyPlants;
 
 public class FusionPlant extends EnergyPlant {
 
-    FusionPlant(){
+    public FusionPlant(){
         super();
         requestSupplies = 1;
+        type = PlantType.FUSION_PLANT;
+        producedEnergy = 20000;
     }
 
 
     @Override
-    public void consume(int supplies) {
+    public boolean consume(int heliumUnit) {
+        return heliumUnit > requestSupplies;
     }
 
     @Override
     public int producePerDay() {
-        return 0;
+        return producedEnergy;
     }
 }

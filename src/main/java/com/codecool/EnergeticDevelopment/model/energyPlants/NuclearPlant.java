@@ -3,17 +3,20 @@ package com.codecool.EnergeticDevelopment.model.energyPlants;
 public class NuclearPlant extends EnergyPlant {
 
 
-    NuclearPlant(){
+    public NuclearPlant(){
         super();
         requestSupplies = 1;
+        type = PlantType.NUCLEAR_PLANT;
+        producedEnergy = 10000;
     }
 
     @Override
-    public void consume(int supplies) {
+    public boolean consume(int uraniumUnit) {
+        return uraniumUnit > requestSupplies;
     }
 
     @Override
     public int producePerDay() {
-        return 0;
+        return producedEnergy;
     }
 }

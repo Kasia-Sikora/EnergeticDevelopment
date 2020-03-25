@@ -2,7 +2,7 @@ package com.codecool.EnergeticDevelopment.model.consumers;
 
 public class NewYork extends EnergyConsumers {
 
-    NewYork(){
+    public NewYork(){
         super();
         requestEnergyPerDay = 10000;
     }

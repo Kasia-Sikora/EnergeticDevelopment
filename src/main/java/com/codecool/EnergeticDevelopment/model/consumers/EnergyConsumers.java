@@ -10,7 +10,11 @@ public abstract class EnergyConsumers implements Consume {
     }
 
     @Override
-    public void consume(int energy){
+    public boolean consume(int energy){
+        return requestEnergyPerDay < energy;
+    }
 
+    public int getRequestEnergyPerDay(){
+        return requestEnergyPerDay;
     }
 }
