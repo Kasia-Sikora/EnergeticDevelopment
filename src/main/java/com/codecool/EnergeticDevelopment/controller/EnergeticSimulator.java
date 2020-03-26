@@ -60,8 +60,8 @@ class EnergeticSimulator {
         }
     }
 
-    private void addMinesToList(MineTypes key) {
-        switch (key) {
+    private void addMinesToList(MineTypes mineTypes) {
+        switch (mineTypes) {
             case COAL:
                 listOfMines.add(new CoalMine());
                 break;
@@ -74,8 +74,8 @@ class EnergeticSimulator {
 
     }
 
-    private void addPlantsToList(PlantType key) {
-        switch (key) {
+    private void addPlantsToList(PlantType plantType) {
+        switch (plantType) {
             case COAL_PLANT:
                 listOfEnergyPlants.add(new CoalPlant());
                 break;

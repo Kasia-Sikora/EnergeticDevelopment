@@ -19,16 +19,4 @@ public abstract class Mines implements Produce {
         return type;
     }
 
-    public void setType(MineTypes type) {
-        this.type = type;
-    }
-
-    public int getUnitsProducePerDay() {
-        return unitsProducePerDay;
-    }
-
-    public void setUnitsProducePerDay(int unitsProducePerDay) {
-        this.unitsProducePerDay = unitsProducePerDay;
-    }
-
 }
